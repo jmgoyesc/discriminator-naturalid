@@ -41,7 +41,7 @@ The special case is with the event mapping because I am using a natural-id for t
 
 My case is searching events by natural id. 
 
-I wrote a test case, AppTest.test. Before execute the test I am inserting categories and events. For example:
+I wrote a test case, **AppTest.test**. Before execute the test I am inserting categories and events. For example:
 
 Categories:
 
