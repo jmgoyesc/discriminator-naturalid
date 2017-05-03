@@ -1,0 +1,13 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm" package="com.personal.hibernate.model">
+    <class name="Event" table="Parameter" discriminator-value="EVENT-TYPE">
+        <id name="id" type="java.lang.String">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <discriminator column="type" force="true"/>
+        <natural-id mutable="true">
+            <property name="code" column="code" type="java.lang.String"/>
+        </natural-id>
+        <property name="name" column="name" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>
